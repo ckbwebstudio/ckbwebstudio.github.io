@@ -1,1050 +1,3023 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-  <title>CKB Web Studio | Professional Websites for Growing Businesses</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="CKB Web Studio creates modern, responsive and professional websites for businesses, restaurants and entrepreneurs. Based in India, serving clients worldwide.">
+<title>CKB Web Studio | Website Development for Small Businesses</title>
 
-  <meta name="keywords" content="website development, business website, restaurant website, landing page, WordPress website, ecommerce website, local SEO, website redesign, website maintenance">
+<meta name="description"
+content="CKB Web Studio creates modern, responsive and professional websites for small businesses, restaurants, service companies and professionals worldwide.">
 
-  <meta name="author" content="Chandan Kumar Biswas - CKB Web Studio">
+<meta name="keywords"
+content="CKB Web Studio, website development, web design, business website, website developer India, website development USA, small business websites, restaurant website, landing page">
 
-  <meta name="robots" content="index, follow">
+<meta name="author"
+content="Chandan Kumar Biswas - CKB Web Studio">
 
-  <meta property="og:title" content="CKB Web Studio | Modern Websites for Growing Businesses">
-  <meta property="og:description" content="Professional websites for businesses, restaurants and entrepreneurs. Based in India. Serving clients worldwide.">
-  <meta property="og:type" content="website">
+<meta name="robots"
+content="index, follow">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta name="theme-color"
+content="#0969da">
 
-    html {
-      scroll-behavior: smooth;
-    }
+<!-- Open Graph -->
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #172033;
-      background: #ffffff;
-    }
+<meta property="og:type"
+content="website">
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+<meta property="og:title"
+content="CKB Web Studio | Websites That Help Businesses Grow">
 
-    img {
-      max-width: 100%;
-    }
+<meta property="og:description"
+content="Modern, responsive websites for small businesses. Based in India, serving clients worldwide.">
 
-    .container {
-      width: 92%;
-      max-width: 1180px;
-      margin: auto;
-    }
+<meta property="og:site_name"
+content="CKB Web Studio">
 
-    /* HEADER */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid #e8eaf0;
-      backdrop-filter: blur(12px);
-    }
 
-    .nav {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
+<!-- =========================
+     ORGANIZATION STRUCTURED DATA
+========================= -->
 
-    .logo {
-      font-size: 23px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-      color: #111827;
-    }
+<script type="application/ld+json">
 
-    .logo span {
-      color: #635bff;
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      list-style: none;
-    }
+  "name": "CKB Web Studio",
 
-    .nav-links a {
-      font-size: 14px;
-      font-weight: 600;
-      color: #475569;
-      transition: 0.25s;
-    }
+  "alternateName": "CKB Web Studio",
 
-    .nav-links a:hover {
-      color: #635bff;
-    }
+  "description": "Website development and digital services for small businesses worldwide.",
 
-    .nav-button {
-      background: #635bff;
-      color: white !important;
-      padding: 11px 18px;
-      border-radius: 10px;
-    }
+  "telephone": "+91-9064367365",
 
-    .menu-btn {
-      display: none;
-      border: 0;
-      background: transparent;
-      font-size: 28px;
-      cursor: pointer;
-    }
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kolkata",
+    "addressRegion": "West Bengal",
+    "addressCountry": "IN"
+  },
 
-    /* HERO */
+  "founder": {
+    "@type": "Person",
+    "name": "Chandan Kumar Biswas"
+  },
 
-    .hero {
-      padding: 95px 0 90px;
-      background:
-        radial-gradient(circle at top right, rgba(99,91,255,0.14), transparent 35%),
-        linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%);
-    }
+  "areaServed": "Worldwide",
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      align-items: center;
-      gap: 65px;
-    }
+  "knowsAbout": [
+    "Website Development",
+    "Web Design",
+    "Responsive Web Design",
+    "Landing Pages",
+    "WordPress",
+    "E-commerce Websites",
+    "Local SEO",
+    "Website Maintenance"
+  ]
+}
 
-    .badge {
-      display: inline-block;
-      padding: 8px 13px;
-      border-radius: 50px;
-      background: #eeedff;
-      color: #5148d9;
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
+</script>
 
-    .hero h1 {
-      font-size: clamp(42px, 6vw, 72px);
-      line-height: 1.02;
-      letter-spacing: -3px;
-      color: #111827;
-      margin-bottom: 25px;
-    }
 
-    .hero h1 span {
-      color: #635bff;
-    }
+<style>
 
-    .hero p {
-      max-width: 650px;
-      font-size: 18px;
-      color: #64748b;
-      margin-bottom: 32px;
-    }
+/* =========================================
+   RESET
+========================================= */
 
-    .hero-buttons {
-      display: flex;
-      gap: 13px;
-      flex-wrap: wrap;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 22px;
-      border-radius: 11px;
-      font-weight: 700;
-      font-size: 15px;
-      transition: 0.25s;
-      cursor: pointer;
-      border: 0;
-    }
+html{
+    scroll-behavior:smooth;
+}
 
-    .btn-primary {
-      background: #635bff;
-      color: white;
-      box-shadow: 0 10px 25px rgba(99,91,255,0.25);
-    }
+body{
 
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      background: #5148d9;
-    }
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 
-    .btn-secondary {
-      background: white;
-      border: 1px solid #dfe3ec;
-      color: #263043;
-    }
+    line-height:1.6;
 
-    .btn-secondary:hover {
-      border-color: #635bff;
-      color: #635bff;
-    }
+    color:#172033;
 
-    .hero-card {
-      background: #111827;
-      color: white;
-      border-radius: 25px;
-      padding: 30px;
-      box-shadow: 0 25px 60px rgba(17,24,39,0.18);
-    }
+    background:#ffffff;
+}
 
-    .browser-bar {
-      display: flex;
-      gap: 6px;
-      margin-bottom: 25px;
-    }
+a{
+    text-decoration:none;
+    color:inherit;
+}
 
-    .browser-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #64748b;
-    }
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
+}
 
-    .hero-card h3 {
-      font-size: 27px;
-      margin-bottom: 12px;
-    }
 
-    .hero-card p {
-      color: #aab4c5;
-      font-size: 15px;
-      margin-bottom: 25px;
-    }
+/* =========================================
+   GLOBAL
+========================================= */
 
-    .mini-stat {
-      display: flex;
-      justify-content: space-between;
-      padding: 14px 0;
-      border-top: 1px solid #2d3748;
-      font-size: 14px;
-    }
+.container{
 
-    .mini-stat strong {
-      color: white;
-    }
+    width:90%;
 
-    /* SECTIONS */
+    max-width:1200px;
 
-    section {
-      padding: 90px 0;
-    }
+    margin:auto;
+}
 
-    .section-heading {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 50px;
-    }
+section{
 
-    .section-heading .eyebrow {
-      color: #635bff;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
+    padding:90px 0;
+}
 
-    .section-heading h2 {
-      font-size: 40px;
-      line-height: 1.15;
-      letter-spacing: -1.5px;
-      margin-bottom: 14px;
-      color: #111827;
-    }
+.section-title{
 
-    .section-heading p {
-      color: #64748b;
-      font-size: 16px;
-    }
+    text-align:center;
 
-    /* SERVICES */
+    margin-bottom:55px;
+}
 
-    .services {
-      background: #ffffff;
-    }
+.section-title h2{
 
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
+    font-size:44px;
 
-    .service-card {
-      border: 1px solid #e7eaf0;
-      border-radius: 17px;
-      padding: 28px;
-      background: white;
-      transition: 0.25s;
-    }
+    line-height:1.15;
 
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 18px 40px rgba(17,24,39,0.08);
-      border-color: #d6d2ff;
-    }
+    margin-bottom:15px;
+}
 
-    .service-icon {
-      width: 45px;
-      height: 45px;
-      border-radius: 12px;
-      background: #eeedff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 21px;
-      margin-bottom: 20px;
-    }
+.section-title p{
 
-    .service-card h3 {
-      margin-bottom: 9px;
-      font-size: 18px;
-    }
+    max-width:700px;
 
-    .service-card p {
-      color: #64748b;
-      font-size: 14px;
-    }
+    margin:auto;
 
-    /* ABOUT */
+    color:#687386;
 
-    .about {
-      background: #f8f9fc;
-    }
+    font-size:17px;
+}
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 65px;
-      align-items: center;
-    }
+.badge{
 
-    .about h2 {
-      font-size: 42px;
-      line-height: 1.15;
-      letter-spacing: -1.5px;
-      margin-bottom: 20px;
-    }
+    display:inline-block;
 
-    .about p {
-      color: #64748b;
-      margin-bottom: 17px;
-    }
+    padding:7px 15px;
 
-    .check-list {
-      list-style: none;
-      margin-top: 25px;
-    }
+    border-radius:30px;
 
-    .check-list li {
-      margin-bottom: 13px;
-      font-weight: 600;
-    }
+    background:#e7f2ff;
 
-    .check-list li::before {
-      content: "✓";
-      color: #635bff;
-      font-weight: 900;
-      margin-right: 10px;
-    }
+    color:#0969da;
 
-    .about-box {
-      background: #111827;
-      color: white;
-      padding: 40px;
-      border-radius: 25px;
-    }
+    font-size:14px;
 
-    .about-box h3 {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
+    font-weight:bold;
 
-    .about-box p {
-      color: #b9c2d0;
-    }
+    margin-bottom:18px;
+}
 
-    .about-box strong {
-      color: white;
-    }
 
-    /* PROCESS */
+/* =========================================
+   NAVIGATION
+========================================= */
 
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
+header{
 
-    .process-card {
-      padding: 25px;
-      border: 1px solid #e7eaf0;
-      border-radius: 16px;
-    }
+    position:sticky;
 
-    .process-number {
-      font-size: 13px;
-      color: #635bff;
-      font-weight: 800;
-      margin-bottom: 15px;
-    }
+    top:0;
 
-    .process-card h3 {
-      margin-bottom: 9px;
-    }
+    z-index:1000;
 
-    .process-card p {
-      color: #64748b;
-      font-size: 14px;
-    }
+    background:
+    rgba(255,255,255,.97);
 
-    /* PORTFOLIO */
+    box-shadow:
+    0 2px 15px rgba(0,0,0,.07);
+}
 
-    .portfolio {
-      background: #f8f9fc;
-    }
+.navbar{
 
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
+    min-height:76px;
 
-    .portfolio-card {
-      border-radius: 18px;
-      overflow: hidden;
-      background: white;
-      border: 1px solid #e6e8ef;
-    }
+    display:flex;
 
-    .portfolio-image {
-      height: 190px;
-      background: linear-gradient(135deg, #635bff, #111827);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 23px;
-      font-weight: 800;
-      padding: 20px;
-      text-align: center;
-    }
+    align-items:center;
 
-    .portfolio-content {
-      padding: 22px;
-    }
+    justify-content:space-between;
+}
 
-    .demo-label {
-      display: inline-block;
-      background: #fff3cd;
-      color: #795900;
-      font-size: 11px;
-      padding: 5px 8px;
-      border-radius: 5px;
-      font-weight: 800;
-      margin-bottom: 9px;
-    }
+.logo{
 
-    .portfolio-content h3 {
-      margin-bottom: 7px;
-    }
+    font-size:25px;
 
-    .portfolio-content p {
-      color: #64748b;
-      font-size: 14px;
-    }
+    font-weight:900;
 
-    /* PRICING */
+    color:#0969da;
+}
 
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
+.logo span{
 
-    .price-card {
-      border: 1px solid #e2e6ed;
-      border-radius: 20px;
-      padding: 32px;
-      position: relative;
-      background: white;
-    }
+    color:#172033;
+}
 
-    .price-card.popular {
-      border: 2px solid #635bff;
-      box-shadow: 0 20px 45px rgba(99,91,255,0.12);
-    }
+.nav-links{
 
-    .popular-label {
-      position: absolute;
-      top: -14px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #635bff;
-      color: white;
-      padding: 6px 13px;
-      border-radius: 30px;
-      font-size: 11px;
-      font-weight: 800;
-      white-space: nowrap;
-    }
+    display:flex;
 
-    .price-card h3 {
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
+    align-items:center;
 
-    .price-description {
-      color: #64748b;
-      font-size: 14px;
-      min-height: 45px;
-    }
+    gap:27px;
 
-    .price {
-      font-size: 43px;
-      font-weight: 800;
-      margin: 22px 0;
-      color: #111827;
-    }
+    list-style:none;
+}
 
-    .price small {
-      font-size: 14px;
-      color: #64748b;
-      font-weight: 500;
-    }
+.nav-links a{
 
-    .features {
-      list-style: none;
-      margin-bottom: 25px;
-    }
+    color:#374151;
 
-    .features li {
-      margin-bottom: 11px;
-      font-size: 14px;
-      color: #475569;
-    }
+    font-weight:600;
+}
 
-    .features li::before {
-      content: "✓";
-      color: #635bff;
-      font-weight: 800;
-      margin-right: 8px;
-    }
+.nav-links a:hover{
 
-    .full-btn {
-      width: 100%;
-      text-align: center;
-    }
+    color:#0969da;
+}
 
-    /* FAQ */
+.nav-cta{
 
-    .faq {
-      max-width: 800px;
-      margin: auto;
-    }
+    background:#0969da;
 
-    details {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 20px 0;
-    }
+    color:white !important;
 
-    summary {
-      cursor: pointer;
-      font-weight: 700;
-      list-style: none;
-    }
+    padding:11px 20px;
 
-    summary::-webkit-details-marker {
-      display: none;
-    }
+    border-radius:8px;
+}
 
-    details p {
-      padding-top: 12px;
-      color: #64748b;
-      font-size: 15px;
-    }
+.menu{
 
-    /* CTA */
+    display:none;
 
-    .cta {
-      padding: 70px 0;
-    }
+    font-size:29px;
 
-    .cta-box {
-      background: #111827;
-      color: white;
-      border-radius: 25px;
-      padding: 60px;
-      text-align: center;
-    }
+    cursor:pointer;
+}
 
-    .cta-box h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
 
-    .cta-box p {
-      color: #b7c0cf;
-      max-width: 650px;
-      margin: 0 auto 25px;
-    }
+/* =========================================
+   HERO
+========================================= */
 
-    /* CONTACT */
+.hero{
 
-    .contact {
-      background: #f8f9fc;
-    }
+    background:
+    linear-gradient(
+        135deg,
+        #eef6ff,
+        #ffffff 55%,
+        #f3f8ff
+    );
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 45px;
-    }
+    padding:110px 0;
+}
 
-    .contact-info h2 {
-      font-size: 40px;
-      line-height: 1.15;
-      margin-bottom: 18px;
-    }
+.hero-grid{
 
-    .contact-info > p {
-      color: #64748b;
-      margin-bottom: 28px;
-    }
+    display:grid;
 
-    .contact-item {
-      margin-bottom: 18px;
-    }
+    grid-template-columns:
+    1.15fr .85fr;
 
-    .contact-item strong {
-      display: block;
-      margin-bottom: 3px;
-    }
+    gap:60px;
 
-    .contact-item span,
-    .contact-item a {
-      color: #64748b;
-      font-size: 14px;
-    }
+    align-items:center;
+}
 
-    .contact-form {
-      background: white;
-      border: 1px solid #e5e8ee;
-      border-radius: 20px;
-      padding: 30px;
-    }
+.hero h1{
 
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
+    font-size:
+    clamp(45px,6vw,72px);
 
-    .form-group {
-      margin-bottom: 17px;
-    }
+    line-height:1.04;
 
-    .form-group label {
-      display: block;
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 7px;
-    }
+    margin-bottom:25px;
+}
 
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 13px;
-      border: 1px solid #dfe3ea;
-      border-radius: 9px;
-      font-family: inherit;
-      outline: none;
-      font-size: 14px;
-      background: white;
-    }
+.hero h1 span{
+
+    color:#0969da;
+}
+
+.hero-description{
+
+    max-width:650px;
+
+    color:#5e6979;
+
+    font-size:19px;
+
+    margin-bottom:32px;
+}
+
+.buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 25px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.btn-primary{
+
+    background:#0969da;
+
+    color:white;
+}
+
+.btn-primary:hover{
+
+    background:#0758b5;
+
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+
+    background:white;
+
+    border:1px solid #d8e0ea;
+}
+
+.btn-secondary:hover{
+
+    background:#f5f8fc;
+}
+
+.hero-card{
+
+    background:#0d1726;
+
+    color:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 25px 70px
+    rgba(0,0,0,.15);
+}
+
+.hero-card h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+}
+
+.hero-card > p{
+
+    color:#c4cfdd;
+
+    margin-bottom:25px;
+}
+
+.feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:15px 0;
+}
+
+.check{
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    background:#0969da;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+}
+
+
+/* =========================================
+   TRUST BAR
+========================================= */
+
+.trust{
+
+    border-bottom:1px solid #e7ecf2;
+
+    padding:35px 0;
+}
+
+.trust-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    text-align:center;
+}
+
+.trust-item{
+
+    border-right:1px solid #e2e7ee;
+}
+
+.trust-item:last-child{
+
+    border:none;
+}
+
+.trust-item h3{
+
+    color:#0969da;
+
+    font-size:30px;
+}
+
+.trust-item p{
+
+    color:#687386;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.services{
+
+    background:#f8fbff;
+}
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:22px;
+}
+
+.service{
+
+    background:white;
+
+    border:1px solid #e4eaf2;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    transition:.25s;
+}
+
+.service:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 20px 45px
+    rgba(0,0,0,.08);
+}
+
+.service-icon{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#e8f3ff;
+
+    border-radius:12px;
+
+    font-size:27px;
+
+    margin-bottom:20px;
+}
+
+.service h3{
+
+    font-size:21px;
+
+    margin-bottom:10px;
+}
+
+.service p{
+
+    color:#687386;
+}
+
+
+/* =========================================
+   WHY US
+========================================= */
+
+.why{
+
+    background:#0d1726;
+
+    color:white;
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+}
+
+.why h2{
+
+    font-size:44px;
+
+    line-height:1.15;
+
+    margin-bottom:20px;
+}
+
+.why-description{
+
+    color:#c4cfdd;
+
+    font-size:17px;
+}
+
+.why-list{
+
+    list-style:none;
+}
+
+.why-list li{
+
+    background:#172438;
+
+    padding:18px;
+
+    border-radius:9px;
+
+    margin:12px 0;
+}
+
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:25px;
+}
+
+.process{
+
+    text-align:center;
+}
+
+.process-number{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:#0969da;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 
-    .form-group textarea {
-      min-height: 130px;
-      resize: vertical;
+    margin:
+    0 auto 18px;
+
+    font-size:20px;
+
+    font-weight:bold;
+}
+
+.process h3{
+
+    margin-bottom:8px;
+}
+
+.process p{
+
+    color:#687386;
+}
+
+
+/* =========================================
+   PORTFOLIO
+========================================= */
+
+.portfolio{
+
+    background:#f8fbff;
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+}
+
+.project{
+
+    background:white;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:.25s;
+}
+
+.project:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 20px 40px
+    rgba(0,0,0,.08);
+}
+
+.project-image{
+
+    height:190px;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:25px;
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:800;
+}
+
+.project-one{
+
+    background:
+    linear-gradient(
+        135deg,
+        #8b4513,
+        #e0a15b
+    );
+}
+
+.project-two{
+
+    background:
+    linear-gradient(
+        135deg,
+        #075985,
+        #38bdf8
+    );
+}
+
+.project-three{
+
+    background:
+    linear-gradient(
+        135deg,
+        #166534,
+        #4ade80
+    );
+}
+
+.project-content{
+
+    padding:25px;
+}
+
+.demo-label{
+
+    display:inline-block;
+
+    background:#fff3cd;
+
+    color:#856404;
+
+    padding:4px 8px;
+
+    border-radius:5px;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+}
+
+.project-content p{
+
+    color:#687386;
+
+    margin:
+    10px 0 20px;
+}
+
+
+/* =========================================
+   PRICING
+========================================= */
+
+.pricing-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+}
+
+.price-card{
+
+    border:1px solid #e0e6ee;
+
+    border-radius:16px;
+
+    padding:35px;
+
+    position:relative;
+}
+
+.price-card.featured{
+
+    border:2px solid #0969da;
+
+    box-shadow:
+    0 20px 45px
+    rgba(9,105,218,.12);
+}
+
+.popular{
+
+    position:absolute;
+
+    right:20px;
+
+    top:-14px;
+
+    background:#0969da;
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+.price-card h3{
+
+    font-size:23px;
+}
+
+.price{
+
+    font-size:45px;
+
+    font-weight:900;
+
+    margin:15px 0;
+}
+
+.price small{
+
+    font-size:14px;
+
+    color:#687386;
+
+    font-weight:normal;
+}
+
+.price-card > p{
+
+    color:#687386;
+
+    margin-bottom:20px;
+}
+
+.price-list{
+
+    list-style:none;
+
+    margin-bottom:25px;
+}
+
+.price-list li{
+
+    margin:12px 0;
+}
+
+.price-list li::before{
+
+    content:"✓";
+
+    color:#0969da;
+
+    font-weight:bold;
+
+    margin-right:8px;
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq{
+
+    background:#f8fbff;
+}
+
+.faq-grid{
+
+    max-width:850px;
+
+    margin:auto;
+}
+
+details{
+
+    background:white;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:10px;
+
+    margin-bottom:12px;
+
+    padding:20px;
+}
+
+summary{
+
+    cursor:pointer;
+
+    font-weight:700;
+}
+
+details p{
+
+    color:#687386;
+
+    margin-top:15px;
+}
+
+
+/* =========================================
+   AUDIT CTA
+========================================= */
+
+.audit{
+
+    background:
+    linear-gradient(
+        135deg,
+        #0969da,
+        #004a9e
+    );
+
+    color:white;
+
+    text-align:center;
+}
+
+.audit h2{
+
+    font-size:44px;
+
+    margin-bottom:15px;
+}
+
+.audit p{
+
+    max-width:680px;
+
+    margin:
+    0 auto 30px;
+
+    color:#dcecff;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    .8fr 1.2fr;
+
+    gap:40px;
+}
+
+.contact-box{
+
+    background:#0d1726;
+
+    color:white;
+
+    border-radius:16px;
+
+    padding:40px;
+}
+
+.contact-box h3{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+}
+
+.contact-box > p{
+
+    color:#c4cfdd;
+
+    margin-bottom:25px;
+}
+
+.contact-item{
+
+    margin:20px 0;
+}
+
+.contact-item small{
+
+    display:block;
+
+    color:#9eacbd;
+
+    margin-bottom:3px;
+}
+
+.contact-link{
+
+    color:#fff;
+}
+
+.contact-link:hover{
+
+    color:#61b5ff;
+}
+
+form{
+
+    display:grid;
+
+    gap:15px;
+}
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:
+    1px solid #dce2ea;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:#0969da;
+}
+
+textarea{
+
+    min-height:160px;
+
+    resize:vertical;
+}
+
+.form-note{
+
+    color:#687386;
+
+    font-size:13px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+
+    background:#080e18;
+
+    color:#aeb9c7;
+
+    padding:50px 0;
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr 1fr;
+
+    gap:40px;
+}
+
+.footer-logo{
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+}
+
+footer h4{
+
+    color:white;
+
+    margin-bottom:15px;
+}
+
+.footer-links{
+
+    list-style:none;
+}
+
+.footer-links li{
+
+    margin:9px 0;
+}
+
+.footer-links a:hover{
+
+    color:white;
+}
+
+.copyright{
+
+    border-top:
+    1px solid #202b3a;
+
+    margin-top:35px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+    font-size:14px;
+}
+
+
+/* =========================================
+   FLOATING WHATSAPP
+========================================= */
+
+.whatsapp{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:900;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:14px 20px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 8px 30px
+    rgba(0,0,0,.2);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:850px){
+
+    .menu{
+
+        display:block;
     }
+
+    .nav-links{
+
+        display:none;
+
+        position:absolute;
+
+        left:0;
+
+        right:0;
+
+        top:76px;
+
+        background:white;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding:25px;
 
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: #635bff;
+        gap:18px;
+
+        box-shadow:
+        0 10px 20px
+        rgba(0,0,0,.08);
     }
 
-    /* FOOTER */
+    .nav-links.active{
 
-    footer {
-      background: #0b1020;
-      color: white;
-      padding: 50px 0 25px;
+        display:flex;
     }
+
+    .hero-grid,
+    .why-grid,
+    .contact-grid{
 
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 0.8fr 0.8fr;
-      gap: 40px;
-      padding-bottom: 35px;
+        grid-template-columns:1fr;
     }
 
-    footer h3 {
-      margin-bottom: 13px;
+    .service-grid,
+    .portfolio-grid,
+    .pricing-grid{
+
+        grid-template-columns:1fr;
     }
+
+    .process-grid{
 
-    footer p,
-    footer a {
-      color: #9ca7b8;
-      font-size: 14px;
+        grid-template-columns:
+        1fr 1fr;
     }
 
-    footer a:hover {
-      color: white;
+    .trust-grid{
+
+        grid-template-columns:
+        1fr 1fr;
+
+        gap:25px;
     }
 
-    .footer-links {
-      list-style: none;
+    .trust-item{
+
+        border:none;
     }
+
+    .footer-grid{
 
-    .footer-links li {
-      margin-bottom: 8px;
+        grid-template-columns:1fr;
     }
 
-    .footer-bottom {
-      border-top: 1px solid #20283a;
-      padding-top: 20px;
-      color: #7d8798;
-      font-size: 13px;
-      text-align: center;
+    .hero{
+
+        padding:75px 0;
     }
+
+    .hero h1{
 
-    /* WHATSAPP */
-
-    .whatsapp {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25D366;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 27px;
-      font-weight: bold;
-      z-index: 1000;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        font-size:45px;
     }
 
-    /* RESPONSIVE */
+    .section-title h2,
+    .why h2,
+    .audit h2{
 
-    @media (max-width: 900px) {
+        font-size:34px;
+    }
 
-      .hero-grid,
-      .about-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
+}
 
-      .service-grid,
-      .portfolio-grid,
-      .pricing-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+@media(max-width:500px){
 
-      .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    .process-grid,
+    .trust-grid{
 
-      .hero {
-        padding-top: 70px;
-      }
+        grid-template-columns:1fr;
+    }
 
-      .hero h1 {
-        letter-spacing: -2px;
-      }
+    .buttons{
 
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
+        flex-direction:column;
     }
 
-    @media (max-width: 700px) {
-
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 72px;
-        left: 0;
-        right: 0;
-        background: white;
-        padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        border-bottom: 1px solid #e5e7eb;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .menu-btn {
-        display: block;
-      }
-
-      .nav-button {
-        width: 100%;
-        text-align: center;
-      }
-
-      .service-grid,
-      .portfolio-grid,
-      .pricing-grid,
-      .process-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 65px 0;
-      }
-
-      .hero h1 {
-        font-size: 43px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      section {
-        padding: 65px 0;
-      }
-
-      .section-heading h2,
-      .about h2,
-      .contact-info h2 {
-        font-size: 33px;
-      }
-
-      .cta-box {
-        padding: 40px 22px;
-      }
-
-      .cta-box h2 {
-        font-size: 31px;
-      }
-
-      .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-      }
+    .btn{
+
+        text-align:center;
     }
-  </style>
+
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-  <!-- HEADER -->
 
-  <header>
-    <div class="container nav">
+<!-- =====================================
+     NAVIGATION
+===================================== -->
 
-      <a href="#home" class="logo">
-        CKB <span>Web Studio</span>
-      </a>
+<header>
 
-      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
-        ☰
-      </button>
+<div class="container navbar">
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#services" onclick="closeMenu()">Services</a></li>
-        <li><a href="#about" onclick="closeMenu()">About</a></li>
-        <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
-        <li><a href="#pricing" onclick="closeMenu()">Pricing</a></li>
-        <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
-        <li>
-          <a href="#contact" class="nav-button" onclick="closeMenu()">
-            Get Started
-          </a>
-        </li>
-      </ul>
+<a href="#home"
+   class="logo">
 
-    </div>
-  </header>
+CKB <span>Web Studio</span>
+
+</a>
 
 
-  <!-- HERO -->
+<div class="menu"
+     onclick="toggleMenu()">
 
-  <main>
+☰
 
-    <section class="hero" id="home">
-
-      <div class="container hero-grid">
-
-        <div>
-
-          <div class="badge">
-            Based in India • Serving Clients Worldwide
-          </div>
-
-          <h1>
-            Modern websites for
-            <span>growing businesses.</span>
-          </h1>
-
-          <p>
-            CKB Web Studio helps small businesses, restaurants,
-            entrepreneurs and local brands build professional websites
-            that look great, work on every device and help turn visitors
-            into customers.
-          </p>
-
-          <div class="hero-buttons">
-
-            <a href="#contact" class="btn btn-primary">
-              Start Your Project →
-            </a>
-
-            <a href="#portfolio" class="btn btn-secondary">
-              View Demo Work
-            </a>
-
-          </div>
-
-        </div>
+</div>
 
 
-        <div class="hero-card">
+<ul class="nav-links"
+    id="navLinks">
 
-          <div class="browser-bar">
-            <div class="browser-dot"></div>
-            <div class="browser-dot"></div>
-            <div class="browser-dot"></div>
-          </div>
+<li>
+<a href="#services">
+Services
+</a>
+</li>
 
-          <h3>
-            Your business deserves a better website.
-          </h3>
+<li>
+<a href="#portfolio">
+Portfolio
+</a>
+</li>
 
-          <p>
-            Clean design. Mobile-first experience. Fast loading.
-            Built around your business goals.
-          </p>
+<li>
+<a href="#pricing">
+Pricing
+</a>
+</li>
 
-          <div class="mini-stat">
-            <span>Business Websites</span>
-            <strong>✓</strong>
-          </div>
+<li>
+<a href="#process">
+Process
+</a>
+</li>
 
-          <div class="mini-stat">
-            <span>Mobile Responsive</span>
-            <strong>✓</strong>
-          </div>
+<li>
+<a href="#faq">
+FAQ
+</a>
+</li>
 
-          <div class="mini-stat">
-            <span>SEO Ready</span>
-            <strong>✓</strong>
-          </div>
+<li>
+<a href="#contact"
+   class="nav-cta">
 
-          <div class="mini-stat">
-            <span>Worldwide Service</span>
-            <strong>✓</strong>
-          </div>
+Get Started
 
-        </div>
+</a>
+</li>
 
-      </div>
+</ul>
 
-    </section>
+</div>
 
-
-    <!-- SERVICES -->
-
-    <section class="services" id="services">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="eyebrow">
-            What We Do
-          </div>
-
-          <h2>
-            Everything you need to build your online presence.
-          </h2>
-
-          <p>
-            From a simple business website to a complete e-commerce
-            experience, we build practical digital solutions for growing
-            businesses.
-          </p>
-
-        </div>
+</header>
 
 
-        <div class="service-grid">
 
-          <div class="service-card">
-            <div class="service-icon">💻</div>
-            <h3>Business Websites</h3>
-            <p>
-              Professional websites designed to establish credibility
-              and help customers find and contact your business.
-            </p>
-          </div>
+<!-- =====================================
+     HERO
+===================================== -->
 
-          <div class="service-card">
-            <div class="service-icon">🍽️</div>
-            <h3>Restaurant Websites</h3>
-            <p>
-              Beautiful restaurant websites with menus, locations,
-              contact details and online ordering integrations.
-            </p>
-          </div>
+<section class="hero"
+         id="home">
 
-          <div class="service-card">
-            <div class="service-icon">🚀</div>
-            <h3>Landing Pages</h3>
-            <p>
-              Focused landing pages built for products, services,
-              advertising campaigns and lead generation.
-            </p>
-          </div>
+<div class="container hero-grid">
 
-          <div class="service-card">
-            <div class="service-icon">✨</div>
-            <h3>Website Redesign</h3>
-            <p>
-              Modernize an outdated website with a cleaner design,
-              better mobile experience and improved usability.
-            </p>
-          </div>
 
-   
+<div>
+
+<span class="badge">
+
+🌎 Based in India • Serving Clients Worldwide
+
+</span>
+
+
+<h1>
+
+Modern websites for
+<span>growing businesses.</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+CKB Web Studio creates professional,
+mobile-friendly and conversion-focused
+websites for small businesses, restaurants,
+service companies and professionals.
+
+</p>
+
+
+<div class="buttons">
+
+<a href="#contact"
+   class="btn btn-primary">
+
+Get a Free Website Audit
+
+</a>
+
+
+<a href="#portfolio"
+   class="btn btn-secondary">
+
+View Our Demo Projects
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-card">
+
+<h3>
+
+What We Do
+
+</h3>
+
+
+<p>
+
+We help businesses build a professional
+online presence that makes it easier for
+customers to discover, contact and trust them.
+
+</p>
+
+
+<div class="feature">
+
+<span class="check">
+✓
+</span>
+
+Mobile-friendly websites
+
+</div>
+
+
+<div class="feature">
+
+<span class="check">
+✓
+</span>
+
+Business & service websites
+
+</div>
+
+
+<div class="feature">
+
+<span class="check">
+✓
+</span>
+
+Restaurant websites
+
+</div>
+
+
+<div class="feature">
+
+<span class="check">
+✓
+</span>
+
+Landing pages
+
+</div>
+
+
+<div class="feature">
+
+<span class="check">
+✓
+</span>
+
+Local SEO foundations
+
+</div>
+
+
+<div class="feature">
+
+<span class="check">
+✓
+</span>
+
+Website maintenance
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     TRUST
+===================================== -->
+
+<section class="trust">
+
+<div class="container trust-grid">
+
+
+<div class="trust-item">
+
+<h3>
+$199+
+</h3>
+
+<p>
+Starter websites
+</p>
+
+</div>
+
+
+<div class="trust-item">
+
+<h3>
+100%
+</h3>
+
+<p>
+Responsive design
+</p>
+
+</div>
+
+
+<div class="trust-item">
+
+<h3>
+SEO
+</h3>
+
+<p>
+Search-ready structure
+</p>
+
+</div>
+
+
+<div class="trust-item">
+
+<h3>
+Worldwide
+</h3>
+
+<p>
+Client service
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     SERVICES
+===================================== -->
+
+<section class="services"
+         id="services">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Our Services
+</h2>
+
+<p>
+Complete website solutions for businesses
+that want a professional online presence.
+</p>
+
+</div>
+
+
+
+<div class="service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+🌐
+</div>
+
+<h3>
+Business Websites
+</h3>
+
+<p>
+Professional websites for startups,
+small businesses and established companies.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🍽️
+</div>
+
+<h3>
+Restaurant Websites
+</h3>
+
+<p>
+Menus, location, contact details,
+reservation and ordering CTAs.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🎯
+</div>
+
+<h3>
+Landing Pages
+</h3>
+
+<p>
+Focused landing pages for products,
+services, campaigns and lead generation.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🔄
+</div>
+
+<h3>
+Website Redesign
+</h3>
+
+<p>
+Modernize an outdated website and
+improve the customer experience.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🛒
+</div>
+
+<h3>
+E-commerce Websites
+</h3>
+
+<p>
+Online stores designed to showcase
+products and support online sales.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🔎
+</div>
+
+<h3>
+Local SEO
+</h3>
+
+<p>
+Search-friendly structure and local
+business information foundations.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+⚙️
+</div>
+
+<h3>
+WordPress Websites
+</h3>
+
+<p>
+Manageable WordPress websites for
+businesses that want easy updates.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🌍
+</div>
+
+<h3>
+Domain & Hosting Setup
+</h3>
+
+<p>
+Assistance with domains, hosting,
+DNS and website deployment.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🛠️
+</div>
+
+<h3>
+Website Maintenance
+</h3>
+
+<p>
+Content changes, updates and
+ongoing website support.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     ABOUT
+===================================== -->
+
+<section id="about">
+
+<div class="container why-grid">
+
+
+<div>
+
+<span class="badge">
+About CKB Web Studio
+</span>
+
+
+<h2>
+Technology made simple for small businesses.
+</h2>
+
+
+<p class="why-description"
+   style="color:#687386; margin-bottom:18px;">
+
+CKB Web Studio is a website development
+business founded by Chandan Kumar Biswas
+in Kolkata, West Bengal, India.
+
+</p>
+
+
+<p class="why-description"
+   style="color:#687386;">
+
+  We work with businesses that need a
+professional website without unnecessary
+complexity. Our focus is clean design,
+mobile usability, clear information and
+strong customer contact options.
+
+</p>
+
+</div>
+
+
+
+<div class="why"
+     style="padding:35px; border-radius:16px;">
+
+<ul class="why-list">
+
+<li>
+✓ Clear and modern website design
+</li>
+
+<li>
+✓ Mobile-first experience
+</li>
+
+<li>
+✓ Business-focused content structure
+</li>
+
+<li>
+✓ Contact and lead-generation options
+</li>
+
+<li>
+✓ Search-friendly foundations
+</li>
+
+<li>
+✓ Worldwide remote service
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     PROCESS
+===================================== -->
+
+<section id="process">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+How It Works
+</h2>
+
+<p>
+A simple process from first conversation
+to website launch.
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="process">
+
+<div class="process-number">
+1
+</div>
+
+<h3>
+Discover
+</h3>
+
+<p>
+We understand your business,
+audience and website requirements.
+</p>
+
+</div>
+
+
+<div class="process">
+
+<div class="process-number">
+2
+</div>
+
+<h3>
+Design
+</h3>
+
+<p>
+We create the website structure,
+content layout and visual direction.
+</p>
+
+</div>
+
+
+<div class="process">
+
+<div class="process-number">
+3
+</div>
+
+<h3>
+Build
+</h3>
+
+<p>
+We develop, test and optimize
+the website for different devices.
+</p>
+
+</div>
+
+
+<div class="process">
+
+<div class="process-number">
+4
+</div>
+
+<h3>
+Launch
+</h3>
+
+<p>
+We publish the website and
+complete the final handover.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     PORTFOLIO
+===================================== -->
+
+<section class="portfolio"
+         id="portfolio">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Demo Portfolio
+</h2>
+
+<p>
+Sample projects demonstrating the types
+of websites CKB Web Studio can create.
+</p>
+
+</div>
+
+
+<div class="portfolio-grid">
+
+
+<div class="project">
+
+<div class="project-image project-one">
+
+🍽️ Restaurant Website
+
+</div>
+
+<div class="project-content">
+
+<span class="demo-label">
+DEMO PROJECT
+</span>
+
+<h3>
+Texas Family Kitchen
+</h3>
+
+<p>
+A restaurant website concept featuring
+menu, location, reservation and contact CTAs.
+</p>
+
+<a href="#contact"
+   class="btn btn-secondary">
+
+Request Similar Website
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="project">
+
+<div class="project-image project-two">
+
+🔧 Plumbing Website
+
+</div>
+
+<div class="project-content">
+
+<span class="demo-label">
+DEMO PROJECT
+</span>
+
+<h3>
+Austin Pro Plumbing
+</h3>
+
+<p>
+A local service website designed around
+calls, quote requests and service areas.
+</p>
+
+<a href="#contact"
+   class="btn btn-secondary">
+
+Request Similar Website
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="project">
+
+<div class="project-image project-three">
+
+✨ Cleaning Website
+
+</div>
+
+<div class="project-content">
+
+<span class="demo-label">
+DEMO PROJECT
+</span>
+
+<h3>
+GreenClean Services
+</h3>
+
+<p>
+A cleaning company website concept
+with services and quote-request sections.
+</p>
+
+<a href="#contact"
+   class="btn btn-secondary">
+
+Request Similar Website
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     PRICING
+===================================== -->
+
+<section id="pricing">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Simple Pricing
+</h2>
+
+<p>
+Introductory packages for small businesses.
+Custom projects can be quoted separately.
+</p>
+
+</div>
+
+
+<div class="pricing-grid">
+
+
+<div class="price-card">
+
+<h3>
+Starter
+</h3>
+
+<div class="price">
+$199
+<small>
+/ project
+</small>
+</div>
+
+<p>
+For businesses that need a
+simple online presence.
+</p>
+
+
+<ul class="price-list">
+
+<li>
+1–3 pages
+</li>
+
+<li>
+Mobile responsive
+</li>
+
+<li>
+Contact section
+</li>
+
+<li>
+Call-to-action buttons
+</li>
+
+<li>
+Basic SEO setup
+</li>
+
+<li>
+Social links
+</li>
+
+</ul>
+
+
+<a href="#contact"
+   class="btn btn-secondary">
+
+Get Started
+
+</a>
+
+</div>
+
+
+
+<div class="price-card featured">
+
+<span class="popular">
+MOST POPULAR
+</span>
+
+<h3>
+Business
+</h3>
+
+<div class="price">
+$399
+<small>
+/ project
+</small>
+</div>
+
+<p>
+For established businesses
+needing a stronger website.
+</p>
+
+
+<ul class="price-list">
+
+<li>
+5–8 pages
+</li>
+
+<li>
+Custom responsive design
+</li>
+
+<li>
+Contact / quote form
+</li>
+
+<li>
+Google Maps integration
+</li>
+
+<li>
+Basic local SEO
+</li>
+
+<li>
+Analytics setup
+</li>
+
+<li>
+30 days minor support
+</li>
+
+</ul>
+
+
+<a href="#contact"
+   class="btn btn-primary">
+
+Get Started
+
+</a>
+
+</div>
+
+
+
+<div class="price-card">
+
+<h3>
+Growth
+</h3>
+
+<div class="price">
+$699
+<small>
+/ project
+</small>
+</div>
+
+<p>
+For businesses that need
+a larger online presence.
+</p>
+
+
+<ul class="price-list">
+
+<li>
+Up to 12 pages
+</li>
+
+<li>
+Custom website design
+</li>
+
+<li>
+Lead-generation sections
+</li>
+
+<li>
+Advanced contact forms
+</li>
+
+<li>
+Local SEO foundation
+</li>
+
+<li>
+Analytics
+</li>
+
+<li>
+60 days minor support
+</li>
+
+</ul>
+
+
+<a href="#contact"
+   class="btn btn-secondary">
+
+Get Started
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     FAQ
+===================================== -->
+
+<section class="faq"
+         id="faq">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+<p>
+Some common questions from potential clients.
+</p>
+
+</div>
+
+
+<div class="faq-grid">
+
+
+<details>
+
+<summary>
+Do you work with clients outside India?
+</summary>
+
+<p>
+Yes. CKB Web Studio is based in Kolkata,
+India and serves clients worldwide through
+remote communication.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Do I need to have a domain already?
+</summary>
+
+<p>
+No. We can help you choose a suitable domain
+and guide you through domain and hosting setup.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Can you redesign my existing website?
+</summary>
+
+<p>
+Yes. Website redesign is one of our services.
+We can review the current website and discuss
+a new structure and design.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Can you build an online store?
+</summary>
+
+<p>
+Yes. E-commerce websites are available as
+custom projects. Requirements and pricing
+depend on the number of products and
+features required.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>
+Do you provide website maintenance?
+</summary>
+
+<p>
+Yes. Ongoing maintenance and content updates
+can be arranged after the website launch.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>
+How do I request a project?
+</summary>
+
+<p>
+Use the contact form below or contact CKB Web
+Studio through WhatsApp. Tell us what your
+business does and what kind of website you need.
+</p>
+
+</details>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     FREE AUDIT
+===================================== -->
+
+<section class="audit">
+
+<div class="container">
+
+<h2>
+Get a Free Website Audit
+</h2>
+
+<p>
+Already have a website? Send it to us and
+we can review its design, mobile experience,
+content structure and basic SEO setup.
+</p>
+
+<a href="#contact"
+   class="btn btn-secondary">
+
+Request My Free Audit
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     CONTACT
+===================================== -->
+
+<section id="contact">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Let's Build Your Website
+</h2>
+
+<p>
+Tell us about your business and your website
+requirements. We'll get back to you.
+</p>
+
+</div>
+
+
+
+<div class="contact-grid">
+
+
+<div class="contact-box">
+
+<h3>
+CKB Web Studio
+</h3>
+
+<p>
+Modern websites for small businesses.
+</p>
+
+
+<div class="contact-item">
+
+<small>
+Founder
+</small>
+
+Chandan Kumar Biswas
+
+</div>
+
+
+<div class="contact-item">
+
+<small>
+Phone / WhatsApp
+</small>
+
+<a class="contact-link"
+   href="tel:+919064367365">
+
++91 9064367365
+
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<small>
+Location
+</small>
+
+Kolkata, West Bengal, India
+
+</div>
+
+
+<div class="contact-item">
+
+<small>
+Service Area
+</small>
+
+Based in India • Serving Clients Worldwide
+
+</div>
+
+
+<div class="contact-item">
+
+<small>
+Email
+</small>
+
+Email coming soon
+
+</div>
+
+</div>
+
+
+
+<form id="contactForm">
+
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required
+>
+
+
+<input
+type="email"
+id="email"
+placeholder="Your Email"
+required
+>
+
+
+<input
+type="text"
+id="business"
+placeholder="Business Name"
+required
+>
+
+
+<input
+type="url"
+id="website"
+placeholder="Current Website (optional)"
+>
+
+
+<select id="service"
+        required>
+
+<option value="">
+Select a Service
+</option>
+
+<option>
+Business Website
+</option>
+
+<option>
+Restaurant Website
+</option>
+
+<option>
+Landing Page
+</option>
+
+<option>
+Website Redesign
+</option>
+
+<option>
+WordPress Website
+</option>
+
+<option>
+E-commerce Website
+</option>
+
+<option>
+Local SEO
+</option>
+
+<option>
+Domain & Hosting Setup
+</option>
+
+<option>
+Website Maintenance
+</option>
+
+<option>
+Free Website Audit
+</option>
+
+</select>
+
+
+<textarea
+id="message"
+placeholder="Tell us about your business and what you need..."
+required>
+</textarea>
+
+
+<button
+type="submit"
+class="btn btn-primary">
+
+Send Project Request
+
+</button>
+
+
+<p class="form-note">
+
+Your email application will open with the
+project details. Connect this form to a
+professional form service before launch.
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+<div class="container">
+
+
+<div class="footer-grid">
+
+
+<div>
+
+<div class="footer-logo">
+CKB Web Studio
+</div>
+
+<p>
+Professional website development for
+small businesses worldwide.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>
+Services
+</h4>
+
+<ul class="footer-links">
+
+<li>
+<a href="#services">
+Business Websites
+</a>
+</li>
+
+<li>
+<a href="#services">
+Landing Pages
+</a>
+</li>
+
+<li>
+<a href="#services">
+E-commerce
+</a>
+</li>
+
+<li>
+<a href="#services">
+Local SEO
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>
+Company
+</h4>
+
+<ul class="footer-links">
+
+<li>
+<a href="#about">
+About
+</a>
+</li>
+
+<li>
+<a href="#portfolio">
+Portfolio
+</a>
+</li>
+
+<li>
+<a href="#pricing">
+Pricing
+</a>
+</li>
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 CKB Web Studio.
+All rights reserved.
+
+<br><br>
+
+Based in Kolkata, India • Serving Clients Worldwide.
+
+<br>
+
+Demo portfolio projects are clearly identified
+and are not represented as real client work.
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- =====================================
+     WHATSAPP
+===================================== -->
+
+<a
+href="https://wa.me/919064367365"
+class="whatsapp"
+target="_blank"
+rel="noopener">
+
+💬 WhatsApp
+
+</a>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+
+    document
+    .getElementById("navLinks")
+    .classList
+    .toggle("active");
+
+}
+
+
+/* CLOSE MENU AFTER CLICK */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            document
+            .getElementById("navLinks")
+            .classList
+            .remove("active");
+
+        }
+    );
+
+});
+
+
+/* CONTACT FORM */
+
+document
+.getElementById("contactForm")
+.addEventListener(
+"submit",
+function(event){
+
+    event.preventDefault();
+
+
+    const name =
+    document.getElementById("name").value;
+
+
+    const email =
+    document.getElementById("email").value;
+
+
+    const business =
+    document.getElementById("business").value;
+
+
+    const website =
+    document.getElementById("website").value;
+
+
+    const service =
+    document.getElementById("service").value;
+
+
+    const message =
+    document.getElementById("message").value;
+
+
+    const subject =
+    encodeURIComponent(
+        "New CKB Web Studio Project Inquiry"
+    );
+
+
+    const body =
+    encodeURIComponent(
+
+`Name:
+${name}
+
+Email:
+${email}
+
+Business:
+${business}
+
+Current Website:
+${website}
+
+Requested Service:
+${service}
+
+Message:
+${message}
+
+Sent through CKB Web Studio website.`
+
+    );
+
+
+    /*
+       IMPORTANT:
+
+       Replace this address after creating
+       your professional business email.
+    */
+
+    window.location.href =
+    "mailto:YOUR_EMAIL@example.com"
+    + "?subject="
+    + subject
+    + "&body="
+    + body;
+
+});
+
+</script>
+
+
+</body>
+  </html>
